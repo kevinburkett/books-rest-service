@@ -90,6 +90,6 @@ public class Book {
   
     @Override
     public String toString() {
-        return "Employee{" + "id=" + this.id + ", authorName='" + this.authorName + '\'' + ", title='" + this.title + '\'' + ", publishDate='" + this.publishDate + '\'' + ", tags='" + this.tags + '\'' + '}';
+        return "Book{" + "id=" + this.id + ", authorName='" + this.authorName + '\'' + ", title='" + this.title + '\'' + ", publishDate='" + this.publishDate + '\'' + ", tags='" + this.tags + '\'' + '}';
     }
 }

@@ -1,8 +1,8 @@
 package com.service.book;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import java.util.List;
+// import org.springframework.data.jpa.repository.Query;
+// import java.util.List;
 
 interface BookRepository extends JpaRepository<Book, String> {
     // @Query("SELECT b FROM Book b WHERE CONCAT(b.id, ' ', b.AuthorName, ' ', b.title, ' ', b.publishDate, ' ', b.tags) LIKE %?1%")

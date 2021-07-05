@@ -15,22 +15,15 @@
 
 - Complete the search and count aggregate features
 - Fix bug "Cannot find symbol" in BookController
-- Create Unit Tests
 - Add in more error checking
 
+## Run project
+
+```Bash
+./mvnw clean spring-boot:run
+```
+
 ## Endpoints
-
-### Get All Books
-
-```Bash
-curl -v localhost:8080/books
-```
-
-### Get Book By Id
-
-```Bash
-curl -v localhost:8080/books/618346252
-```
 
 ### Create Books
 
@@ -50,6 +43,18 @@ curl -X POST localhost:8080/books -H 'Content-type:application/json' -d '{"id": 
 
 ```Bash
 curl -X PUT localhost:8080/books/618346252 -H 'Content-type:application/json' -d '{"id": "618346252", "authorName": "J.R.R. Tolkien", "title": "The Fellowship of the Ring (The Lord of the Rings, #1)", "publishDate": "07/29/1954", "tags": "Fantasy,Drama"}'
+```
+
+### Get All Books
+
+```Bash
+curl -v localhost:8080/books
+```
+
+### Get Book By Id
+
+```Bash
+curl -v localhost:8080/books/618346252
 ```
 
 ### Delete Book by Id
